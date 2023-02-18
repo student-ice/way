@@ -1,6 +1,13 @@
 {
     "files.associations": {
         "stdio.h": "c",
-        "cstdio": "c"
+        "cstdio": "c",
+        "cmath": "c",
+        "*.tcc": "c",
+        "chrono": "c",
+        "numeric": "c",
+        "ratio": "c",
+        "cstdlib": "c",
+        "string.h": "c"
     }
 }
