@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include <stdio.h>
 /*
 1
 1 1
@@ -9,17 +9,21 @@
 */
 int main(int argc, char const *argv[])
 {
-    int i,j,a[6][6];
-    for(i=0;i<6;i++){
-        a[i][0]=1;
-        a[i][i]=1;
-        for(j=1;j<i;j++){
-            a[i][j]=a[i-1][j-1]+a[i-1][j];
+    int i, j, a[10][10];
+    for (i = 0; i < 10; i++)
+    {
+        a[i][0] = 1;
+        a[i][i] = 1;
+        for (j = 1; j < i; j++)
+        {
+            a[i][j] = a[i - 1][j - 1] + a[i - 1][j];
         }
     }
-    for(i=0;j<6;i++){
-        for(j=0;j<=i;j++){
-            printf("%-4d",a[i][j]);
+    for (i = 0; j < 10; i++)
+    {
+        for (j = 0; j <= i; j++)
+        {
+            printf("%-4d", a[i][j]);
         }
         putchar('\n');
     }
