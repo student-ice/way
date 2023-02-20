@@ -8,6 +8,7 @@
         "numeric": "c",
         "ratio": "c",
         "cstdlib": "c",
-        "string.h": "c"
+        "string.h": "c",
+        "stdlib.h": "c"
     }
 }
